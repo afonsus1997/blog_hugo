@@ -23,6 +23,7 @@ if (theme === "dark") {
     document.documentElement.setAttribute('data-theme', 'dark');
     document.querySelector('meta[name="theme-color"]').setAttribute('content', '{{ $themeColorDark }}');
     window.localStorage.setItem('theme', 'dark');
+    window.localStorage.setItem('',)
     document.getElementById("theme-toggle").innerHTML = "🌙";
 
     var els = [].slice.apply(document.getElementsByClassName("chroma"));

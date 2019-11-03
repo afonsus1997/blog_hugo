@@ -65,14 +65,14 @@
     
     <!-- Favicon, Icons, Web App -->
     {{- $favicon := "favicon.ico" -}}
-    {{- $safariMaskIcon := "icons/safari-pinned-tab.svg" -}}
+    {{- $safariMaskIcon := "icons/logo.jpg" -}}
     {{- $safariMaskColor := .Site.Params.safariMaskColor -}}
-    {{- $appleTouchIcon := "icons/apple-touch-icon.png" -}}
+    {{- $appleTouchIcon := "icons/logo.jpg" -}}
     {{- partial "components/relative-url.html" (dict "Deliver" . "filename" "") -}}
     {{- $url := .Scratch.Get "url" -}}
     {{- $msApplicationStartURL := $url -}}
     {{- $msApplicationTileColor := .Site.Params.msApplicationTileColor -}}
-    {{- partial "components/relative-url.html" (dict "Deliver" . "filename" "icons/mstile-150x150.png") -}}
+    {{- partial "components/relative-url.html" (dict "Deliver" . "filename" "icons/logo.jpg") -}}
     {{- $url := .Scratch.Get "url" -}}
     {{- $msApplicationTileImage := $url -}}
     {{- $manifest := "manifest.json" -}}

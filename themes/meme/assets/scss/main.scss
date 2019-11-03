@@ -120,6 +120,9 @@
         {{ end }}
         {{ with .Site.Params.siteBrandBackgroundImage }}
             background-image: {{ . }};
+            background-position: center center;    // 居中
+            background-size: cover;                // 填满div
+            background-repeat: no-repeat;
         {{ end }}
     }
     {{ if .Site.Params.siteBrandSVG }}
